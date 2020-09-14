@@ -1,0 +1,32 @@
+export interface SettingResponse {
+  countryId: string;
+  createdBy: string;
+  createdDate: string;
+  facebook: string;
+  google: string;
+  instagram: string;
+  isActive: string;
+  maintenanceMode: number;
+  metaTagDescription: string;
+  metaTagKeyword: string;
+  metaTagTitle: string;
+  modifiedBy: string;
+  modifiedDate: string;
+  orderStatus: string;
+  settingsId: string;
+  storeAddress: string;
+  storeCurrencyId: string;
+  storeEmail: string;
+  storeFax: string;
+  storeImage: string;
+  storeImagePath: string;
+  storeLanguageName: string;
+  storeLogo: string;
+  storeLogoPath: string;
+  storeName: string;
+  storeOwner: string;
+  storeTelephone: string;
+  twitter: string;
+  url: string;
+  zoneId: string;
+}
