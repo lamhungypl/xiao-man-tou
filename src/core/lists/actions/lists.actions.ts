@@ -1,8 +1,3 @@
-import { BannerListModel } from '../models/banner-list.model';
-import { FeaturedProductModel } from '../models/featured-product.model';
-import { ContactUsRequestModel } from '../models/contact-us-request.model';
-import { TodaydealModel } from '../models/todaydeal.model';
-
 export enum ActionTypes {
   GET_PRODUCT_LIST = '[product] get product list',
   GET_PRODUCT_LIST_SUCCESS = '[product] get product list success',

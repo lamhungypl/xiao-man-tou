@@ -1,20 +1,5 @@
 import { ActionTypes, Actions } from '../actions/lists.actions';
 import { ListsState, listsRecord } from './lists.state';
-import { BannerListResponseModel } from '../models/banner-list-response.model';
-import { PageDetailResponse } from '../models/page-details-response';
-import { RelatedProductListModel } from '../models/related-product-list.model';
-import { FeaturedProductResponseModel } from '../models/featured-product-response.model';
-import { ProductsResponseModel } from '../models/products-response.model';
-import { CategoryResponseModel } from '../models/category-response.model';
-import { ManufacturerResponseModel } from '../models/manufacturer-response.model';
-import { ProductDetailResponseModel } from '../models/product-details-response.model';
-import { PagelistResponseModel } from '../models/page-list-response.model';
-import { SettingResponseModel } from '../models/setting-response.model';
-import { CountryResponseModel } from '../models/country-response.model';
-import { ZoneResponseModel } from '../models/zone-response.model';
-import { TodayDealsResponseModel } from '../models/today-deals-response.model';
-import { SubcategoryResponseModel } from '../models/subcategory.response';
-import { ProductDetailMandatoryResponseModel } from '../models/product-detail-mandatory-response.model';
 
 export const initialState: ListsState = (new listsRecord() as unknown) as ListsState;
 
@@ -62,16 +47,16 @@ export function reducer(state = initialState, action: Actions): ListsState {
     case ActionTypes.GET_RELATED_PRODUCT_LIST_FAIL: {
       return state;
     }
-    case ActionTypes.GET_MANUFACTURER_LIST: {
-      return state;
-    }
+    // case ActionTypes.GET_MANUFACTURER_LIST: {
+    //   return state;
+    // }
 
-    case ActionTypes.GET_MANUFACTURER_LIST_SUCCESS: {
-      return state;
-    }
-    case ActionTypes.GET_MANUFACTURER_LIST_FAIL: {
-      return state;
-    }
+    // case ActionTypes.GET_MANUFACTURER_LIST_SUCCESS: {
+    //   return state;
+    // }
+    // case ActionTypes.GET_MANUFACTURER_LIST_FAIL: {
+    //   return state;
+    // }
 
     case ActionTypes.GET_PRODUCT_DETAIL: {
       return state;
@@ -86,20 +71,20 @@ export function reducer(state = initialState, action: Actions): ListsState {
 
     // product detail mandatory details
 
-    case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY: {
-      return state;
-    }
+    // case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY: {
+    //   return state;
+    // }
 
-    case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY_SUCCESS: {
-      return state;
-    }
-    case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY_FAIL: {
-      return state;
-    }
+    // case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY_SUCCESS: {
+    //   return state;
+    // }
+    // case ActionTypes.GET_PRODUCT_DETAIL_MANDATORY_FAIL: {
+    //   return state;
+    // }
 
-    case ActionTypes.GET_AVAILABLE_VALUE: {
-      return state;
-    }
+    // case ActionTypes.GET_AVAILABLE_VALUE: {
+    //   return state;
+    // }
     case ActionTypes.GET_BANNER_LIST: {
       return state;
     }
@@ -109,15 +94,15 @@ export function reducer(state = initialState, action: Actions): ListsState {
     case ActionTypes.GET_BANNER_LIST_FAIL: {
       return state;
     }
-    case ActionTypes.GET_BANNER_LIST_COUNT: {
-      return state;
-    }
-    case ActionTypes.GET_BANNER_LIST_COUNT_SUCCESS: {
-      return state;
-    }
-    case ActionTypes.GET_BANNER_LIST_COUNT_FAIL: {
-      return state;
-    }
+    // case ActionTypes.GET_BANNER_LIST_COUNT: {
+    //   return state;
+    // }
+    // case ActionTypes.GET_BANNER_LIST_COUNT_SUCCESS: {
+    //   return state;
+    // }
+    // case ActionTypes.GET_BANNER_LIST_COUNT_FAIL: {
+    //   return state;
+    // }
     case ActionTypes.GET_FEATURED_PRODUCT_LIST: {
       return state;
     }

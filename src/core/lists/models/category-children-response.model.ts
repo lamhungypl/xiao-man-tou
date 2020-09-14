@@ -1,4 +1,4 @@
-export class CategoryChildrenResponse {
+export interface CategoryChildrenResponse {
   categoryId: string;
   image: string;
   imagePath: string;
