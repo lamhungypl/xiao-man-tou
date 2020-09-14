@@ -1,5 +1,3 @@
-import { Action } from '@ngrx/store';
-
 export enum ActionTypes {
   GET_PROFILE = '[login] get profile',
   GET_PROFILE_SUCCESS = '[login] get profile success',
