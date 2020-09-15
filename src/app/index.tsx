@@ -12,7 +12,6 @@ import ProductDetails from 'src/views/pages/ProductDetails';
 import ProductList from 'src/views/pages/Products';
 import WishList from 'src/views/pages/Wishlist';
 
-import logo from '../logo.svg';
 import './App.css';
 
 function App() {
