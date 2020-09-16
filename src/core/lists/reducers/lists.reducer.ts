@@ -184,7 +184,7 @@ export function reducer(state = initialState, action: Actions): ListsState {
     case ActionTypes.GET_SUB_CATEGORY_LIST_SUCCESS: {
       return state;
     }
-    case ActionTypes.GET_TODAY_DEALS_FAIL: {
+    case ActionTypes.GET_SUB_CATEGORY_LIST_FAIL: {
       return state;
     }
     default: {

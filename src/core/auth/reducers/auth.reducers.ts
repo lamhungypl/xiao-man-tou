@@ -7,36 +7,36 @@ export const initialState: AuthState = (new authRecord() as unknown) as AuthStat
 export function reducer(state = initialState, action: Action): AuthState {
   switch (action.type) {
     case ActionTypes.LOGIN: {
-      state;
+      return state;
     }
 
     case ActionTypes.LOGIN_SUCCESS: {
-      state;
+      return state;
     }
     case ActionTypes.LOGIN_FAIL: {
-      state;
+      return state;
     }
 
     case ActionTypes.REGISTER: {
-      state;
+      return state;
     }
 
     case ActionTypes.REGISTER_SUCCESS: {
-      state;
+      return state;
     }
     case ActionTypes.REGISTER_FAIL: {
-      state;
+      return state;
     }
 
     case ActionTypes.RECOVER: {
-      state;
+      return state;
     }
 
     case ActionTypes.RECOVER_SUCCESS: {
-      state;
+      return state;
     }
     case ActionTypes.RECOVER_FAIL: {
-      state;
+      return state;
     }
     default: {
       return state;

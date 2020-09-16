@@ -1,4 +1,3 @@
-import { type as typeOf } from 'src/core/shared/utility/utility.helpers';
 import { AddressModel } from '../models/address.model';
 import { AddressListRequest } from '../models/addressListRequest.model';
 import { ChangePasswordModel } from '../models/changePassword.model';

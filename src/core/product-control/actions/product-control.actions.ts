@@ -1,4 +1,4 @@
-import { CheckoutModel } from '../models/checkout.model';
+// import { CheckoutModel } from '../models/checkout.model';
 
 export enum ActionTypes {
   ADD_TO_WISHLIST = '[wishlist] add to wishlist',

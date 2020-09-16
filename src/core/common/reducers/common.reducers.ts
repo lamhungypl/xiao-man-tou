@@ -1,6 +1,6 @@
 import { ActionTypes, Action } from '../actions/common.actions';
 import { CommonState, CommonRecord } from './common.state';
-import { ProfileModel } from '../models/profile.model';
+// import { ProfileModel } from '../models/profile.model';
 
 export const initialState: CommonState = (new CommonRecord() as unknown) as CommonState;
 

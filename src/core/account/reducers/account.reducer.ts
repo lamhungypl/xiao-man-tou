@@ -1,7 +1,7 @@
 import { ActionTypes, Action } from '../actions/account.actions';
 import { AccountState, accountRecord } from './account.state';
-import { OrderHistoryModel } from '../models/orderHistory.model';
-import { AddressListResponse } from '../models/addressListResponse.model';
+// import { OrderHistoryModel } from '../models/orderHistory.model';
+// import { AddressListResponse } from '../models/addressListResponse.model';
 
 export const initialState: AccountState = (new accountRecord() as unknown) as AccountState;
 

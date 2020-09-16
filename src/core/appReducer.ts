@@ -1,5 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { AppState } from './appState';
+
 import { reducer as authReducer } from '../core/auth/reducers/auth.reducers';
 import { reducer as accountReducer } from '../core/account/reducers/account.reducer';
 import { reducer as productControlReducer } from '../core/product-control/reducers/product-control.reducers';
