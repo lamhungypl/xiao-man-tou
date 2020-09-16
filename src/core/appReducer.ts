@@ -1,29 +1,20 @@
-/*
-import { ActionReducer, ActionReducerMap, MetaReducer } from '@ngrx/store';
-import { AppState as State } from './state.interface';
-import * as fromAuth from '../core/auth/reducer/auth.reducer';
-import * as fromAccount from '../core/account/reducer/account.reducer';
-import * as fromProductControl from '../core/product-control/reducer/product-control.reducer';
-import * as fromWishlist from '../core/wishlist/reducer/wishlist.reducer';
-import * as fromCommon from '../core/common/reducer/common.reducer';
-import * as fromList from '../core/lists/reducer/lists.reducer';
-import { environment } from '../environments/environment';
+import { combineReducers } from '@reduxjs/toolkit';
+import { AppState } from './appState';
+import { reducer as authReducer } from '../core/auth/reducers/auth.reducers';
+import { reducer as accountReducer } from '../core/account/reducers/account.reducer';
+import { reducer as productControlReducer } from '../core/product-control/reducers/product-control.reducers';
+import { reducer as wishlistReducer } from '../core/wishlist/reducers/wishlist.reducers';
+import { reducer as commonReducer } from '../core/common/reducers/common.reducers';
+import { reducer as listReducer } from '../core/lists/reducers/lists.reducer';
+// import { environment } from '../';
 
-export const reducers: ActionReducerMap<State> = {
-  auth: fromAuth.reducer,
-  account: fromAccount.reducer,
-  productControl: fromProductControl.reducer,
-  wishlist: fromWishlist.reducer,
-  common: fromCommon.reducer,
-  list: fromList.reducer,
-};
-
-export function logger(reducer: ActionReducer<State>): ActionReducer<any, any> {
-  return function (state: State, action: any): State {
-    return reducer(state, action);
-  };
-}
-
-export const metaReducers: MetaReducer<State>[] = !environment.production ? [logger] : [];
-*/
-export const rootReducer = '';
+export const rootReducer = combineReducers({
+  auth: authReducer,
+  account: accountReducer,
+  productControl: productControlReducer,
+  wishlist: wishlistReducer,
+  common: commonReducer,
+  list: listReducer,
+});
+// appState.ts reference
+export type RootState = ReturnType<typeof rootReducer>;
