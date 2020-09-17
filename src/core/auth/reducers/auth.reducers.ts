@@ -2,7 +2,14 @@ import { ActionTypes, Action } from '../actions/auth.actions';
 
 import { AuthState, authRecord } from './auth.state';
 
-export const initialState: AuthState = (new authRecord() as unknown) as AuthState;
+export const initialState: AuthState = {
+  token: '',
+  loginLoading: false,
+
+  registerLoading: false,
+
+  recoverLoading: false,
+};
 
 export function reducer(state = initialState, action: Action): AuthState {
   switch (action.type) {

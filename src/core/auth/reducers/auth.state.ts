@@ -1,6 +1,6 @@
 import { Map, Record } from 'immutable';
 
-export interface AuthState extends Map<string, any> {
+export interface AuthState {
   token: any;
   loginLoading: boolean;
 

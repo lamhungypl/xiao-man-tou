@@ -3,3 +3,4 @@ export const environment = {
   storeUrl: 'http://localhost:8000/api/',
   imageUrl: 'http://localhost:8000/api/media/image-resize',
 };
+export const baseUrl = 'http://localhost:8000/api';
